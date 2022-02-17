@@ -1,0 +1,49 @@
+.header,
+.footer {
+   display: flex;
+   height: auto;
+   align-items: center;
+   background-color: var(--secondary);
+   z-index: 1;
+}
+
+.header {
+   border-bottom: solid 1px var(--quintary);
+   padding: 10px;
+   font-family: "Roboto700";
+}
+
+.header .logo {
+   margin-left: 20px;
+   height: 45px;
+   width: 90px;
+}
+
+.header-content {
+   width: 1060px;
+   max-width: 100%;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.header p,
+.header a {
+   color: white;
+   display: inline-block;
+   margin: 0 15px;
+   text-decoration: none;
+}
+
+.header a:hover {
+   color: #1ed760;
+   cursor: pointer;
+}
+
+.footer {
+   border-top: solid 2px var(--quintary);
+   padding: 30px;
+   justify-content: center;
+}

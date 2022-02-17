@@ -1,0 +1,196 @@
+@font-face {
+   font-family: Roboto700;
+   src: url(../font/roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+   font-family: Roboto400;
+   src: url(../font/roboto/Roboto-Regular.ttf);
+}
+
+:root {
+   --primary: #100e17;
+   --secondary: #17141d;
+   --tertiary: #7a7a8c;
+   --quaternary: #1ed760;
+   --quintary: #28242f;
+}
+
+::-webkit-scrollbar-track {
+   background-color: var(--secondary);
+}
+
+::-webkit-scrollbar {
+   width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+   background: var(--quintary);
+   border-radius: 30px;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   outline: 0;
+}
+
+body,
+html {
+   width: 100%;
+   height: 100%;
+   font-family: "Roboto400";
+}
+
+body {
+   background-color: var(--primary);
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+}
+
+.container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 100%;
+   height: auto;
+   align-items: center;
+   padding: 40px;
+}
+
+.insersao {
+   border-radius: 50%;
+   background-color: var(--secondary);
+   height: 50px;
+   width: 50px;
+   position: fixed;
+   right: 20px;
+   bottom: 20px;
+   z-index: 5;
+   color: white;
+   justify-content: center;
+   align-items: center;
+   font-weight: "bold";
+   font-size: 20px;
+   outline-style: none;
+   cursor: pointer;
+}
+
+#mask {
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: 9000;
+   background-color: black;
+   display: none;
+}
+
+#boxes .window {
+   position: fixed;
+   left: 0;
+   top: 50;
+   width: 550px;
+   height: 550px;
+   display: none;
+   z-index: 9999;
+   padding: 20px;
+   color: white;
+   border-radius: 20px;
+   border-width: 5px;
+   border-color: white;
+}
+
+#formDados {
+   position: absolute;
+   left: 20;
+   top: 20;
+}
+
+#boxes #dialog2 {
+   background: transparent;
+   width: 550px;
+   margin: 0 auto;
+   background-color: var(--secondary);
+   border-radius: 20px;
+   border-width: 5px;
+   border-color: white;
+}
+
+#boxes #dialog3 {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   flex-direction: column;
+   background: transparent;
+   width: 550px;
+   margin: 0 auto;
+   background-color: var(--secondary);
+   border-radius: 20px;
+   border-width: 5px;
+   border-color: white;
+}
+
+#fotoDados {
+   width: 200px;
+   height: 200px;
+   position: absolute;
+   top: 10px;
+   right: 0px;
+}
+
+#confirmaDados {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   height: 24px;
+}
+
+.row-1 {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-direction: row;
+   width: 100%;
+}
+
+#boxes #dialog3 img {
+   width: 200px;
+   height: 200px;
+   padding: 20px;
+}
+
+.column-1,
+.column-2 {
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   flex-direction: column;
+   width: 50%;
+}
+
+/* .porcentagem-content {
+   background-color: lightgray;
+   border: var(--tertiary) solid 1px;
+   width: 400px;
+   height: 26px;
+   margin: 20px;
+   overflow: hidden;
+   border-radius: 20px;
+}
+
+#porcentagem {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   background-color: teal;
+   color: white;
+   font-size: 1rem;
+   height: 24px;
+   padding: 0 10px;
+   border-radius: 20px;
+} */

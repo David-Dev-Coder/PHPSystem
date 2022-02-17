@@ -1,0 +1,100 @@
+.card {
+   flex-shrink: 0;
+   width: 285px;
+   height: 380px;
+   border-radius: 20px;
+   box-shadow: 0 0 99px 0 rgba(0, 0, 0, 1);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-color: var(--secondary);
+   padding: 30px;
+   font-size: 10px;
+   transition: 0.2s;
+   z-index: 1;
+   overflow: hidden;
+   position: relative;
+   margin-top: 20px;
+}
+
+.card:hover {
+   transform: translateY(-20px);
+}
+
+.card .data {
+   color: #fff;
+   text-transform: uppercase;
+}
+
+.card .data time {
+   color: var(--tertiary);
+}
+
+.card h2 {
+   font-size: 16px;
+   line-height: 18px;
+   font-family: "Roboto700";
+   display: block;
+   height: 110px;
+}
+
+.card .autor {
+   display: block;
+   align-items: center;
+}
+
+.card .autor .img-container {
+   width: 100%;
+   height: 225px;
+   border: solid 3px var(--quintary);
+   padding: 2px;
+}
+
+.card .autor .img-container .img {
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+}
+
+.card .autor .info {
+   margin-top: 2px;
+   font-size: 12px;
+   font-family: "Roboto700";
+   text-transform: uppercase;
+}
+
+.card .autor .newinfo {
+   margin-top: 2px;
+   margin-bottom: 20px;
+   font-size: 10px;
+   font-family: "Roboto700";
+   text-transform: uppercase;
+}
+
+.card .autor .info span {
+   font-size: 14px;
+   color: var(--tertiary);
+}
+
+.card .tags a {
+   display: inline-block;
+   border: solid 3px var(--quintary);
+   border-radius: 30px;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   padding: 8px 25px;
+   text-transform: uppercase;
+   color: var(--tertiary);
+   font-family: "Roboto700";
+   text-decoration: none;
+   margin-bottom: 3px;
+   transition: all ease-out 0.3s;
+}
+
+.card .tags a:hover {
+   border-color: #fff;
+   color: #fff;
+   cursor: pointer;
+}
